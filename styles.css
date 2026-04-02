@@ -1,0 +1,37 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+.navbar {
+  background: rgba(0,0,0,0.0);
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  height: 100vh;
+  background: url('/imagens/interstellar.webp') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
