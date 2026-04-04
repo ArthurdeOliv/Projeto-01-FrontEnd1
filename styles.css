@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   color: #fff;
   background-color: #000;
 }
@@ -28,10 +28,112 @@ body {
 
 .hero {
   height: 100vh;
-  background: url('/imagens/interstellar.webp') no-repeat center center/cover;
+   background: url('/imagens/interestellar.jpg') no-repeat center center/cover;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+.hero h1, .hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.onde-assistir {
+  padding: 40px 20px;
+}
+
+.onde-assistir h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  text-align: left;
+  margin-left: 80px;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.logos {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-left: 80px;
+}
+
+.logos img {
+  width: 150px;
+  height: auto;
+}
+
+.frase {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 1.4em;
+  font-style: italic;
+  color: var(--cor-destaque);
+}
+
+.trailer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -40px;
+}
+
+.trailer video {
+  max-width: 600px;
+  width: 100%;
+  border: 2px solid var(--cor-texto);
+  border-radius: 8px;
+}
+/* Responsividade */
+@media (max-width: 900px) {
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .onde-assistir h2 {
+    text-align: center;
+  }
+  .trailer {
+    justify-content: center;
+  }
+}
+
+footer {
+  background-color: #111;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+footer section {
+  max-width: 300px;
+  margin: 10px;
+}
+
+footer h2 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
