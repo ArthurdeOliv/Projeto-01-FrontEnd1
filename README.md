@@ -6,13 +6,13 @@ Disciplina: Programação Frontend I
 
 ## Sobre o Projeto
 
-O filme que eu escolhi foi **Interestelar**, um filme de ficção científica que fala sobre exploração espacial, relatividade do tempo e a sobrevivência da humanidade. Achei interessante porque dá pra usar bastante conteúdo visual e texto, o que ajudou a praticar vários recursos de HTML e CSS.
+O filme que eu escolhi foi Interestelar, um filme de ficção científica que fala sobre exploração espacial, relatividade do tempo e a sobrevivência da humanidade.
 
 O projeto tem três páginas:
 
-- index.html — página principal com informações gerais do filme
-- elenco.html — página com o elenco e a equipe de produção
-- extras.html — página com prêmios, cenários marcantes e curiosidades
+- index.html — página principal com informações gerais do filme.
+- elenco.html — página com o elenco e a equipe de produção.
+- extras.html — página com prêmios, cenários marcantes e curiosidades.
 
 Recursos de HTML usados
 
