@@ -10,9 +10,9 @@ O filme que eu escolhi foi **Interestelar**, um filme de ficção científica qu
 
 O projeto tem três páginas:
 
-- index.html` — página principal com informações gerais do filme
-- elenco.html` — página com o elenco e a equipe de produção
-- extras.html` — página com prêmios, cenários marcantes e curiosidades
+- index.html — página principal com informações gerais do filme
+- elenco.html — página com o elenco e a equipe de produção
+- extras.html — página com prêmios, cenários marcantes e curiosidades
 
 Recursos de HTML usados
 
