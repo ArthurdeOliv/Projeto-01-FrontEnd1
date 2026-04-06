@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-  background: rgba(0,0,0,0.0);
+  background: rgba(0, 0, 0, 0.0);
   padding: 15px;
   position: fixed;
   width: 100%;
@@ -31,16 +31,16 @@ body {
   background: url('/imagens/interestellar.jpg') no-repeat center center/cover;
   position: relative;
   display: flex;
-  align-items: center;        /* centralizado verticalmente */
+  align-items: center;
   justify-content: flex-start;
   text-align: left;
-  padding-left: 60px;
+  padding-left: 70px;
 }
 
-.hero-content {
+.hero-conteudo {
   position: relative;
   z-index: 1;
-  max-width: 500px;
+  max-width: 600px;
   color: #000000;
 }
 
@@ -51,17 +51,7 @@ body {
   font-weight: bold;
 }
 
-.hero .info {
-  font-size: 0.95em;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-wrap: nowrap;   /* impede quebra de linha */
-  white-space: nowrap;
-}
-
-.badge {
+.idade {
   background-color: #1a6ed8;
   color: #000000;
   padding: 2px 8px;
@@ -77,11 +67,11 @@ body {
   color: #000000;
 }
 
-.onde-assistir {
+.assistir {
   padding: 40px 20px;
 }
 
-.onde-assistir h2 {
+.assistir h2 {
   margin-bottom: 20px;
   font-size: 1.8em;
   text-align: left;
@@ -109,10 +99,9 @@ body {
 
 .frase {
   text-align: center;
-  font-family: 'Cinzel', serif;
+  font-family: 'Segoe UI', serif;
   font-size: 1.4em;
   font-style: italic;
-  color: var(--cor-destaque);
 }
 
 .trailer {
@@ -124,21 +113,8 @@ body {
 .trailer video {
   max-width: 600px;
   width: 100%;
-  border: 2px solid var(--cor-texto);
+  border: 2px solid #000000;
   border-radius: 8px;
-}
-/* Responsividade */
-@media (max-width: 900px) {
-  .conteudo {
-    flex-direction: column;
-    align-items: center;
-  }
-  .onde-assistir h2 {
-    text-align: center;
-  }
-  .trailer {
-    justify-content: center;
-  }
 }
 
 footer {
@@ -167,7 +143,7 @@ footer p {
   line-height: 1.4;
 }
 
-.elenco-page {
+.elenco {
   background-color: #f5f5f5;
   min-height: 100vh;
   padding-top: 80px;
@@ -186,7 +162,7 @@ footer p {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0.35);
+  background: rgba(255, 255, 255, 0.35);
 }
 
 .elenco-hero h1 {
@@ -210,10 +186,6 @@ footer p {
 .secao {
   padding: 50px 60px 40px;
   background-color: #f5f5f5;
-}
-
-.secao:nth-child(even) {
-  background-color: #eaeaea;
 }
 
 .secao h2 {
@@ -250,18 +222,6 @@ footer p {
   background-color: #ccc;
 }
 
-.card-placeholder {
-  width: 100%;
-  aspect-ratio: 3/4;
-  background-color: #c8c8c8;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.8em;
-}
-
 .card h3 {
   font-size: 0.9em;
   font-weight: bold;
@@ -283,9 +243,275 @@ footer p {
   margin: 0;
 }
 
+.cenario-card {
+  display: flex;
+  align-items: stretch;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.cenario-card img {
+  width: 60%;
+  height: 340px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cenario-info {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cenario-info h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 6px;
+}
+
+.cenario-info .papel {
+  font-size: 0.85em;
+  color: #1a6ed8;
+  font-weight: bold;
+  margin: 0 0 14px;
+}
+
+.cenario-info .descricao {
+  font-size: 0.9em;
+  color: #444;
+  line-height: 1.6;
+}
+
+.curiosidades-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.curiosidade-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  color: #000;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.curiosidade-num {
+  font-size: 2em;
+  font-weight: bold;
+  color: #1a6ed8;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.curiosidade-card h3 {
+  font-size: 0.95em;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 6px;
+}
+
+.premios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.premio-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.premio-icone {
+  font-size: 2em;
+  flex-shrink: 0;
+}
+
+.premio-info h3 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 2px;
+}
+
+.premio-categoria {
+  font-size: 0.82em;
+  color: #1a6ed8;
+  font-weight: bold;
+  margin: 0 0 6px;
+}
+
+@media (max-width: 900px) {
+  .navbar ul {
+    gap: 18px;
+  }
+
+  .hero {
+    width: 100%;
+    justify-content: center;
+    padding: 0 24px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-conteudo {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.6em;
+  }
+
+  .hero .info {
+    justify-content: center;
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+
+  .assistir {
+    padding: 28px 16px;
+  }
+
+  .assistir h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 32px;
+  }
+
+  .logos {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .trailer {
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .assistir h2 {
+    text-align: center;
+  }
+
+  .trailer {
+    justify-content: center;
+  }
+
+
+  .trailer video {
+    max-width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer section {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
-  .secao { padding: 36px 20px 28px; }
-  .elenco-hero { padding-left: 24px; }
-  .elenco-hero h1 { font-size: 2em; }
-  .cards-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 16px; }
+  .secao {
+    padding: 36px 20px 28px;
+  }
+
+  .elenco-hero {
+    padding-left: 24px;
+  }
+
+  .elenco-hero h1 {
+    font-size: 2em;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px 8px;
+  }
+
+  .navbar ul {
+    gap: 12px;
+  }
+
+  .navbar a {
+    font-size: 0.9em;
+  }
+
+  .hero {
+    padding: 0 16px 48px;
+    align-items: flex-end;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+    letter-spacing: 0.08em;
+  }
+
+  .hero .info {
+    font-size: 0.82em;
+    gap: 4px;
+  }
+
+  .hero .descricao {
+    font-size: 0.85em;
+  }
+
+  .assistir {
+    padding: 28px 16px;
+  }
+
+  .logos {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .logos img {
+    width: 110px;
+  }
+
+  .frase {
+    font-size: 1.1em;
+    padding: 0 8px;
+  }
+
+  footer {
+    padding: 28px 16px;
+  }
+
+  footer p {
+    font-size: 0.82em;
+  }
 }
