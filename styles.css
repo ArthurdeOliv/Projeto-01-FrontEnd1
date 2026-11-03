@@ -28,7 +28,7 @@ body {
 
 .hero {
   height: 100vh;
-  background: url('/imagens/interestellar.jpg') no-repeat center center/cover;
+  background: url('imagens/interestellar.jpg') no-repeat center center/cover;
   position: relative;
   display: flex;
   align-items: center;
@@ -151,7 +151,7 @@ footer p {
 
 .elenco-hero {
   height: 35vh;
-  background: url('/imagens/interestellar.jpg') no-repeat center 30%/cover;
+  background: url('imagens/interestellar.jpg') no-repeat center 30%/cover;
   position: relative;
   display: flex;
   align-items: center;
